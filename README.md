@@ -19,7 +19,7 @@ A responsive and interactive productivity dashboard built using **HTML**, **CSS*
 
 ## 📸 Preview
 
-![Preview](image.png)
+![Preview]preview.jpg
 
 ---
 
