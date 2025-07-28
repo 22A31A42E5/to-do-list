@@ -37,7 +37,7 @@ Deployed using **Netlify**
 **Sailaja Patneedi**  
 🎓 Final Year CSE Student | 🤖 AI/ML Enthusiast  
 🔗 [LinkedIn](https://www.linkedin.com/in/sailaja-patneedi-786a6a295)  
-💻 GitHub: [@yourusername](https://github.com/yourusername)
+💻 GitHub: [@22A31A42E5](https://github.com/22A31A42E5)
 
 ---
 
