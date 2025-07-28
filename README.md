@@ -23,15 +23,6 @@ A responsive and interactive productivity dashboard built using **HTML**, **CSS*
 
 ---
 
-## 📁 Project Structure
-productivity-dashboard/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
----
-
 ## 🚀 Tech Stack
 
 - HTML5
