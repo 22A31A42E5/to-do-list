@@ -1,0 +1,277 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 50%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#add-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background-color: #218838;
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.column {
+  background-color: #fff;
+  flex: 1;
+  min-width: 280px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #444;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  background-color: #e2e6ea;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+button.move-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.move-btn:hover {
+  opacity: 0.8;
+}
+
+button.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.left-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+button.right-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.board {
+  flex: 3;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.notes-section {
+  flex: 1;
+  min-width: 280px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notes-section h2 {
+  margin-top: 0;
+  color: #444;
+  text-align: center;
+}
+#notes-area {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.planner-section {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.planner-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.planner-block {
+  margin-bottom: 15px;
+}
+
+.planner-block h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.planner-text {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Segoe UI', sans-serif;
+  resize: vertical;
+}
+.pomodoro-section {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.pomodoro-section h2 {
+  color: #444;
+}
+
+.timer-display {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+}
+
+.timer-controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#start-btn {
+  background-color: #28a745;
+  color: white;
+}
+#pause-btn {
+  background-color: #ffc107;
+  color: black;
+}
+#reset-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+#session-label {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+.progress-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 25px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+#progress-text {
+  font-size: 16px;
+  color: #444;
+}
+

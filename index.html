@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+  <h1>📋 Productivity Dashboard</h1>
+  
+  <div class="input-section">
+    <input type="text" id="task-input" placeholder="Enter a task..." />
+    <button id="add-btn">Add Task</button>
+  </div>
+
+  <div class="dashboard">
+    <!-- TASK BOARD -->
+    <div class="board">
+      <div class="column" id="todo">
+        <h2>To-Do</h2>
+        <ul class="task-list" id="todo-list"></ul>
+      </div>
+      <div class="column" id="in-progress">
+        <h2>In Progress</h2>
+        <ul class="task-list" id="progress-list"></ul>
+      </div>
+      <div class="column" id="done">
+        <h2>Done</h2>
+        <ul class="task-list" id="done-list"></ul>
+      </div>
+    </div>
+
+    <!-- NOTES SECTION -->
+    <div class="notes-section">
+      <h2>📝 Notes</h2>
+      <textarea id="notes-area" placeholder="Write your notes here..."></textarea>
+    </div>
+    <div class="planner-section">
+  <h2>🗓️ Daily Planner</h2>
+  <div class="planner-block" id="morning-block">
+    <h3>🌅 Morning</h3>
+    <textarea class="planner-text" id="morning-text" placeholder="Morning tasks..."></textarea>
+  </div>
+  <div class="planner-block" id="afternoon-block">
+    <h3🌞>🌞 Afternoon</h3>
+    <textarea class="planner-text" id="afternoon-text" placeholder="Afternoon tasks..."></textarea>
+  </div>
+  <div class="planner-block" id="evening-block">
+    <h3>🌙 Evening</h3>
+    <textarea class="planner-text" id="evening-text" placeholder="Evening tasks..."></textarea>
+  </div>
+</div>
+<div class="progress-section">
+  <h2>📊 Progress Tracker</h2>
+  <div class="progress-bar-container">
+    <div id="progress-bar"></div>
+  </div>
+  <p id="progress-text">0 of 0 tasks completed (0%)</p>
+</div>
+
+<div class="pomodoro-section">
+  <h2>⏱️ Pomodoro Timer</h2>
+  <div class="timer-display" id="timer">25:00</div>
+  <div class="timer-controls">
+    <button id="start-btn">▶ Start</button>
+    <button id="pause-btn">⏸ Pause</button>
+    <button id="reset-btn">🔁 Reset</button>
+  </div>
+  <p id="session-label">Current: Work Session</p>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
